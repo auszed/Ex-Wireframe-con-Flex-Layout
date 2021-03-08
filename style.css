@@ -1,0 +1,139 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fbe6c2;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Header */
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: #f0c929;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+    }
+        .logo{
+            background: #f48b29;
+            flex: 1 1 auto;
+            height: 30px;
+        }
+        .nav{
+            background: #f48b29;
+            flex: 5 1 auto;
+            height: 30px;
+        }
+        .social{
+            background: #f48b29;
+            flex: 1 1 auto;
+            height: 30px;
+        }
+    .texto-principal{
+            background: #ac0d0d;
+    } 
+        .texto-principal > h1{
+            Background: #fbe6c2;
+        }
+
+/* section */
+.section{
+    background: #000;
+    display: flex;
+}
+    .articulos{
+        background: #e4fbff;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .article{
+            background: #b8b5ff;
+            flex: 1 1 40%;
+        }
+        .navegacion-article{
+            background: #7868e6;
+            flex: 1 1 100%;
+        }
+    .aside{
+            background: #28527a;
+            flex: 1 1 auto;
+    }
+        .publicidad{
+            background: #f4d160;
+        }
+/* footer */
+.footer{
+    background: #000;
+    
+}
+    .pie{
+        background: #8ac4d0;
+        
+        
+    }
+
+    /*cambios para tablet*/
+    @media all and (max-width:800px) {
+        
+        .section{
+            flex-direction: column;
+        }
+        
+        .aside{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    /* cambios para movil*/
+    @media all and (max-width: 600px){
+        .menu{
+            flex-direction: column;
+            height: auto;   
+        }  
+            .logo{
+                width: 100%;
+            }
+            .nav{
+                width: 100%;
+            }
+            .social{
+                width: 100%;
+            }
+        .articulos{
+            flex-direction: column;
+        }
+        .aside{
+            flex-direction: column;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
